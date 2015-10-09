@@ -7,4 +7,4 @@ RUN apt-get install -y x11vnc xvfb
 RUN mkdir ~/.vnc
 RUN x11vnc -storepasswd 1234 ~/.vnc/passwd
 
-RUN echo GRASPIT=/opt/ros/fuerte/stacks/graspit_simulator/graspit:/opt/ros/fuerte/stacks/graspit_simulator/graspit/graspit_sources >> ~/.bashrc
+RUN echo "export GRASPIT=/opt/ros/fuerte/stacks/graspit_simulator/graspit/graspit_source" >> ~/.bashrc
